@@ -2,7 +2,7 @@
  
  ## • Перечень автоматизируемых сценариев
 
-Тест-кейсы на автоматизацию тестирования представлены по <code>[ссылке](https://docs.google.com/spreadsheets/d/1PNMJhKdexOi-lbWghN6b-pfBUTc5bu-P95dFtFqxJ-Y/edit#gid=0)</code>. 
+Тест-кейсы на автоматизацию тестирования представлены по [ссылке](https://docs.google.com/spreadsheets/d/1PNMJhKdexOi-lbWghN6b-pfBUTc5bu-P95dFtFqxJ-Y/edit#gid=0). 
 
  ## • Перечень используемых инструментов с обоснованием выбора
 1. Для автоматизации тестирования выбрана интегрированная среда разработки IntelliJ IDEA Community Edition 2022.2.3 – одна из наиболее удобных ИСР;
