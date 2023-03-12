@@ -21,7 +21,7 @@
 
 #### Тестирование с поддержкой MySQL
 
-1. Начните новую сессию в терминале IntelliJ IDEA — `Local (2)`. Для этого нажмите на ![кнопку](../../../Users/123/Downloads/2023-03-12_21-21-58.png);
+1. Начните новую сессию в терминале IntelliJ IDEA — `Local (2)`;
 2. Введите команду для запуска тестироваемого приложения:`java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar`;
 3. Убедитесь, что приложение доступно по адресу:`http://localhost:8080/`;
 4. Начните новую сессию в терминале IntelliJ IDEA — `Local (3)` и введите команду для запуска тестов:`.\gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"`;
