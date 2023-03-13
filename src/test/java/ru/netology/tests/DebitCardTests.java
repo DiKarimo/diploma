@@ -133,6 +133,14 @@ public class DebitCardTests {
     }
 
     @Test
+    public void shouldExpiredIfMonthIsNullAndYearIsNext() {
+        var startPage = new HomePage();
+        var cardPayment = startPage.cardPayment();
+        cardPayment.fillingPaymentFormForDebitCard(DataGenerator.getCardInfoIfMonthIsNullAndYearIsNext());
+        cardPayment.expiredMonth();
+    }
+
+    @Test
     public void shouldInvalidFormatFieldIfYearIsOneNumber() {
         var startPage = new HomePage();
         var cardPayment = startPage.cardPayment();

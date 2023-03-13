@@ -133,6 +133,14 @@ public class CreditCardTests {
     }
 
     @Test
+    public void shouldExpiredIfMonthIsNullAndYearIsNext() {
+        var startPage = new HomePage();
+        var cardPayment = startPage.creditCard();
+        cardPayment.fillingPaymentFormForCreditCard(DataGenerator.getCardInfoIfMonthIsNullAndYearIsNext());
+        cardPayment.expiredMonth();
+    }
+
+    @Test
     public void shouldInvalidFormatFieldIfYearIsOneNumber() {
         var startPage = new HomePage();
         var cardPayment = startPage.creditCard();

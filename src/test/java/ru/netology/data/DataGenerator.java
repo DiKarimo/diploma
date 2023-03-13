@@ -42,6 +42,10 @@ public class DataGenerator {
         return LocalDate.now().plusYears(10).format(DateTimeFormatter.ofPattern("yy"));
     }
 
+    public static String getNextYear() {
+        return LocalDate.now().plusYears(1).format(DateTimeFormatter.ofPattern("yy"));
+    }
+
     public static String getLastYear() {
         return LocalDate.now().minusYears(1).format(DateTimeFormatter.ofPattern("yy"));
     }
@@ -109,6 +113,10 @@ public class DataGenerator {
 
     public static CardInfo getCardInfoIfMonthIsNull() {
         return new CardInfo(getApprovedCardNumber(), "00", getCurrentYear(), getName(), getCVC());
+    }
+
+    public static CardInfo getCardInfoIfMonthIsNullAndYearIsNext() {
+        return new CardInfo(getApprovedCardNumber(), "00", getNextYear(), getName(), getCVC());
     }
 
     public static CardInfo getCardInfoIfYearIsOneNumber() {
