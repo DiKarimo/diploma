@@ -139,7 +139,7 @@ public class DataGenerator {
     }
 
     public static CardInfo getCardInfoIfOwnerIsIncludesLettersAndSymbols() {
-        return new CardInfo(getApprovedCardNumber(), getCurrentMonth(), getCurrentYear(), "Ivan O@Bain", getCVC());
+        return new CardInfo(getApprovedCardNumber(), getCurrentMonth(), getCurrentYear(), "Ivan O'Bain", getCVC());
     }
 
     public static CardInfo getCardInfoIfOwnerIsCyrillicName() {
