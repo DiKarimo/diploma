@@ -24,7 +24,7 @@ allure {
 
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
-        testImplementation 'com.codeborne:selenide:6.11.0'
+        testImplementation 'com.codeborne:selenide:6.12.2'
         testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
         testImplementation 'io.qameta.allure:allure-rest-assured:2.16.1'
         testImplementation 'com.github.javafaker:javafaker:1.0.2'
