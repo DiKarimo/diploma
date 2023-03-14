@@ -21,19 +21,19 @@
 
 #### Тестирование с поддержкой MySQL
 
-1. Начните новую сессию в терминале IntelliJ IDEA — `Local (2)`;
+1. Начните новую сессию в терминале IntelliJ IDEA – `Local (2)`;
 2. Введите команду для запуска тестироваемого приложения:`java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar`;
 3. Убедитесь, что приложение доступно по адресу:`http://localhost:8080/`;
-4. Начните новую сессию в терминале IntelliJ IDEA — `Local (3)` и введите команду для запуска тестов:`.\gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"`;
+4. Начните новую сессию в терминале IntelliJ IDEA – `Local (3)` и введите команду для запуска тестов:`.\gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"`;
 5. Введите команду для создания отчета:`./gradlew allureServe`;
 6. После завершения работы закройте `Local (3)` и `Local (2)`.
 
 #### Тестирование с поддержкой PostgreSQL
 
-1. Начните новую сессию в терминале IntelliJ IDEA — `Local (2)`;
+1. Начните новую сессию в терминале IntelliJ IDEA – `Local (2)`;
 2. Введите команду для запуска тестироваемого приложения:`java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar`;
 3. Убедитесь, что приложение доступно по адресу:`http://localhost:8080/`;
-4. Начните новую сессию в терминале IntelliJ IDEA — `Local (3)` и введите команду для запуска тестов:`.\gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"`;
+4. Начните новую сессию в терминале IntelliJ IDEA – `Local (3)` и введите команду для запуска тестов:`.\gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"`;
 5. Введите команду для создания отчета:`./gradlew allureServe`;
 6. После завершения работы закройте `Local (3)` и `Local (2)`.
 
